@@ -1,0 +1,84 @@
+/* components/ImageUploader.module.css */
+.dropzone {
+  border: 2px dashed #0070f3;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: border .24s ease-in-out;
+  
+}
+
+.dropzone:hover {
+  border-color: #0056b3;
+}
+
+.previewTitle {
+  margin-top: 20px;
+}
+
+.previewTitleError {
+  margin-top: 20px;
+  color: #dc3545;
+}
+
+.fileList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.fileItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.fileItem img {
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.fileItem button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fileItemError {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.errorMessage {
+  font-size: 0.8em;
+}
+
+.submitButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

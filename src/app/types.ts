@@ -1,0 +1,27 @@
+export type Car = {
+  ID: string;
+  marca: string;
+  modelo: string;
+  km: number;
+  anio: number;
+  precio: number;
+  motor: number;
+  traccion: string;
+  combustible: string;
+  transmision: string;
+  anticipo: number;
+  frenos: boolean;
+  hidraulica: boolean;
+  sensor: boolean;
+  airbag: boolean;
+  carroceria: string;
+  puertas: string;
+  estereo_pantalla: boolean;
+  aire_acondicionado: boolean;
+  imagen1: string;
+  imagen2: string;
+  imagen3: string;
+  imagen4: string;
+  tipo: string;
+  permuta: boolean;
+};
