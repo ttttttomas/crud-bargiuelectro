@@ -87,9 +87,12 @@ export default function AddUpdateCarForm() {
       fd.append("stock", stockBool); // "true" o "false"
       // Archivos
       // main_image: un archivo
-      if (files?.[0]) fd.append("main_image", files[0]);
+if (data.main_image) {
+  fd.append("main_image", data.main_image[0]);
+}
       // images: varios con la misma key
       (files || []).forEach((f) => fd.append("images", f));
+      
 
       const res = await axios.post(
         "https://mdpuf8ksxirarnlhtl6pxo2xylsjmtq8-barelectro-api.bargiuelectro.com/products/products/create_product",
@@ -97,6 +100,8 @@ export default function AddUpdateCarForm() {
       );
 
       console.log(res.data);
+      console.log(data);
+      
       alert("Producto creado con éxito");
     } catch (err) {
       console.error("Error al agregar producto:", err.response?.data || err);
